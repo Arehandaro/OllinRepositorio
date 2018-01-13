@@ -1,7 +1,6 @@
 #include <iostream>
 #include <GLFW\glfw3.h>
 #include "window.h"
-#include <gl\glut.h>
 
 using namespace std;
 
@@ -23,8 +22,9 @@ int main()
 			{
 				cout << window.getWidth() << ", " << window.getHeight() << endl;
 				window.clear();
-				glBegin(GL_TRIANGLES);
+				glBegin(GL_QUADS);
 				glVertex2f(-0.5f, -0.5f);
+				glVertex2f(-0.5f,  0.5f);
 				glVertex2f( 0.5f,  0.5f);
 				glVertex2f( 0.5f, -0.5f);
 				glEnd();

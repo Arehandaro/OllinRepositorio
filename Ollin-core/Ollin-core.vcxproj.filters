@@ -19,6 +19,12 @@
     <Filter Include="src\graficas">
       <UniqueIdentifier>{286c4183-fb86-4364-9bad-cf602fd743f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dependencias">
+      <UniqueIdentifier>{8c7b8e21-41ae-4e64-a3ea-5ce538a85297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencias\GLFW">
+      <UniqueIdentifier>{87e410da-7023-4a38-8d90-e0a64f3cc2a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,7 +36,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="WrapperGLFW.dll.config" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="window.h">
