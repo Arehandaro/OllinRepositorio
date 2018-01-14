@@ -70,20 +70,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>$(SolutionDir)Dependencias\GLEW\libs;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencias\GLEW\lib;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
     <IncludePath>$(SolutionDir)Dependencias\GLEW\include;$(SolutionDir)Dependencias\GLFW\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>$(SolutionDir)Dependencias\GLEW\libs;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencias\GLEW\lib;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
     <IncludePath>$(SolutionDir)Dependencias\GLEW\include;$(SolutionDir)Dependencias\GLFW\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(SolutionDir)Dependencias\GLEW\include;$(SolutionDir)Dependencias\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencias\GLEW\libs;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencias\GLEW\lib;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(SolutionDir)Dependencias\GLEW\include;$(SolutionDir)Dependencias\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencias\GLEW\libs;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencias\GLEW\lib;$(SolutionDir)Dependencias\GLFW\libs\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

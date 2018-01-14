@@ -1,4 +1,5 @@
 #include "window.h"
+#include <GL\glew.h>
 using namespace std;
 
 namespace ollin
@@ -27,7 +28,7 @@ namespace ollin
 		{
 			if (!glfwInit())
 			{
-				cout << "Inicio correctamente GLFW!" << endl;
+				cout << "No inicio correctamente GLFW!" << endl;
 				return false;
 			}
 
@@ -42,6 +43,12 @@ namespace ollin
 
 			glfwMakeContextCurrent(m_Window);
 			glfwSetWindowSizeCallback(m_Window, windowResize);
+
+			if (glewInit() != GLEW_OK)
+			{
+				std::cout << "Fallo al crear GLEW" << std::endl;
+				return false;
+			}
 			return true;
 		}
 
