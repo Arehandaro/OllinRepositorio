@@ -1,5 +1,7 @@
 #include "window.h"
-#include <GL\glew.h>
+//#include <GL\gl.h>
+//#include <GL\glew.h>
+
 using namespace std;
 
 namespace ollin
@@ -44,11 +46,14 @@ namespace ollin
 			glfwMakeContextCurrent(m_Window);
 			glfwSetWindowSizeCallback(m_Window, windowResize);
 
+			std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
+			
 			if (glewInit() != GLEW_OK)
 			{
 				std::cout << "Fallo al crear GLEW" << std::endl;
 				return false;
 			}
+
 			return true;
 		}
 

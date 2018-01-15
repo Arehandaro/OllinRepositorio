@@ -1,5 +1,5 @@
 #include <iostream>
-#include <GLFW\glfw3.h>
+//#include <GLFW\glfw3.h>
 #include "window.h"
 
 using namespace std;
@@ -20,7 +20,7 @@ int main()
 
 			while (!window.closed())
 			{
-				cout << window.getWidth() << ", " << window.getHeight() << endl;
+				//cout << window.getWidth() << ", " << window.getHeight() << endl;
 				window.clear();
 				glBegin(GL_QUADS);
 				glVertex2f(-0.5f, -0.5f);
